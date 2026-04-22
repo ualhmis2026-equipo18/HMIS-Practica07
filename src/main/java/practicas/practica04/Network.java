@@ -130,14 +130,6 @@ public class Network<Vertex extends Comparable<Vertex>> implements Graph<Vertex>
     	return new TreeSet<>(this.adjacencyList.keySet());
   	}
 
-  	/**
-  	 *  Returns a TreeSet<T> object reference of the neighbors of a specified Vertex object.
-  	 *
-  	 *  @param v - the Vertex object whose neighbors are returned.
-  	 *
-  	 *  @return a TreeSet<T> of the vertices that are neighbors of v.
-   	 */
-
   	public TreeSet<Vertex> getNeighbors(Vertex v) {
   		//2 líneas
   		HashMap<Vertex, Double> neighbors = this.adjacencyList.get(v);
